@@ -1,0 +1,106 @@
+<!--rbg(244,247,248)-->
+
+<style>
+	body{background-color: rgb(245,248,249);}
+	.top-bar{background-color: white; height: 60px; width: 80%; margin-top: -10px; right: 0px; box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.1); position: fixed; }
+	.side-bar{background-color: white; border-width: 1px; z-index: 1; border-style: solid;border-color: #F2F2F2; float:left; height: 100%; width: 20%; margin-left: -7px; margin-top: -10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1); text-align: center; position: fixed;}
+	.profile-pic{height: 80px;  width: 80px; margin-top: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.1); border-radius: 50%;}
+	.logo{height: 50px; width: 50px;margin-left: -170px; margin-top: 10px;}
+	.name{font-family: arial; font-size: 15px; font-weight: bold; margin-top: 5px;}
+	.occu{font-family: arial; font-size: 10px; margin-top: -10px;}
+	.home{height: 40px;width: 220px; border-radius: 7px; border-width: 0px; background-color: white; margin-top: -15px; text-align: left; padding-left: 20px; font-size: 18px; color: #444444; }
+	button{height: 40px;width: 220px; border-radius: 7px; border-width: 0px; background-color: white; margin-top: 0px; text-align:left; padding-left: 20px; font-size: 18px; color: #444444;}
+	button:hover{ transform: scale(1.05); background-color: #F2F2F2; transition-duration:100ms; }
+	.icon{height: 20px; margin-top: 0px; object-position: center;}
+	.menu{height: 40px; width: 40px; margin-left: -25px; margin-top: -5px;}
+	.menu-button{height: 30px; width: 30px; margin-top: 15px; margin-left: 10px; }
+	button.menu-button:hover, button.menu-button:active{ transform: scale(1.05); background-color: white; transition-duration: 300ms; }
+	.profile-logo{height: 40px; width: 40px; border-radius: 50%; float: right; margin-right: 30px; margin-top: 10px;}
+	.notification{height: 30px; width: 30px; float: right; margin-right: 15px; margin-top: 15px;}
+	.dashboard{height: 400px; width: 1000px; position: absolute;  margin-top: 60px; margin-left: 245px;}
+	.home-dashboard{font-family: arial; font-size: 27px; font-weight: bolder; margin-left: 20px; margin-top: 10px; color: #444444;}
+	.card1:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+	.card2:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+	.card3:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+	.card4:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+	.bigcard1:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+	.bigcard2:hover {box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);}
+	.card1 {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 220px; height: 120px; margin-left: 20px; background-color: white;}
+	.container {padding: 2px 16px;}
+	.card2 {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 220px; height: 120px; margin-left: 270px; background-color: white; position: absolute; margin-top: -120;}
+	.card3 {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 220px; height: 120px; margin-left: 520px; background-color: white; position: absolute; margin-top: -120;}
+	.card4 {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 220px; height: 120px; margin-left: 770px; background-color: white; position: absolute; margin-top: -120;}
+	.bigcard1 {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 470px; height: 260px;background-color: white; position: absolute; margin-top: 30px; margin-left: 20px;}
+	.bigcard2 {box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; width: 470px; height: 260px;background-color: white; position: absolute; margin-top: 30px; margin-left: 520px;}
+</style> 
+
+<main>
+	<div class="side-bar">
+		<img src="./icon-user-slide.png" class="profile-pic">
+		<p class="name">Patient's Name <p>
+		<p class="occu">Occupation<p>
+			<a href="./main-dashboard.html"><button class="home"><img src="./icon/home.jpeg" class="icon">   Home</button></a>
+
+			<a href="./appointment.html"><button><img src="./icon/appointment.png" class="icon">   Appointments</button></a>
+
+			<a href="./doctor.html"><button><img src="./icon/doctor.png" class="icon">   Doctors</button></a>
+
+			<a href="./med-rec.html"><button><img src="./icon/medical-records.png" class="icon">   Medical Records</button></a>
+
+			<a href="./hospital.html"><button><img src="./icon/hospital.png" class="icon">   Hospital</button></a>
+
+			<a href= "./home-rem.html"><button><img src="./icon/home-remedies.png" class="icon">   Home Remedies</button></a>
+
+			<a href= "./fitness.html"><button><img src="./icon/fitness.png" class="icon">   Fitness</button></a>
+
+			<a href="./hygiene.html"><button><img src="./icon/hygiene.jpeg" class="icon">   Hygiene</button></a>
+			
+			<a href= "./first-aid.html"><button><img src="./icon/first-aid.png" class="icon">   First Aid</button></a>
+			
+			<a href= "./pharmacy.html"><button><img src="./icon/pharmacy.jpeg" class="icon">   Pharmacy</button></a>
+			
+			<a href= "./ambulance.html"><button><img src="./icon/ambulance.png" class="icon">   Ambulance</button></a>
+	</div>
+	<div class="top-bar">
+		<button class= 'menu-button'><img src="./icon/menu.png" class="menu"></button>
+		<img class="profile-logo" src="./icon-user-slide.png">
+		<img src="./icon/notifications.png" class="notification">
+	
+	</div>
+	<!--
+	<div class="dashboard">
+		<p class="home-dashboard"> Home </p>
+		<section class="card1">
+  			<section class="container">
+    			
+  			</section>
+		</section>
+		<section class="card2">
+  			<section class="container">
+    			
+  			</section>
+		</section>
+		<section class="card3">
+  			<section class="container">
+    			
+  			</section>
+		</section>
+		<section class="card4">
+  			<section class="container">
+    			
+  			</section>
+		</section>
+		<section class="bigcard1">
+  			<section class="container">
+    			
+  			</section>
+		</section>
+		<section class="bigcard2">
+  			<section class="container">
+    			
+  			</section>
+		</section>
+	</div>
+	-->
+
+</main>
